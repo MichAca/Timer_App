@@ -24,8 +24,8 @@
     <me.zhanghai.android.materialprogressbar.MaterialProgressBar
             android:id="@+id/progress_countdown"
             style="@style/Widget.MaterialProgressBar.ProgressBar"
-            android:minWidth="312dp"
-            android:minHeight="312dp"
+            android:minWidth="300dp"
+            android:minHeight="300dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
