@@ -9,14 +9,14 @@ import java.util.*
 class PrefUtil {
     companion object {
 
+        private const val TIME_LENGTH_ID = "com.example.timerapp.timer_length"
+
         fun getTimerLength(context: Context):Int{
-
-            //placeholder
-
-            return 1
+            val preferences = PreferenceManager.getDefaultSharedPreferences(context)
+            return preferences.getInt(TIME_LENGTH_ID, 10)
         }
 
-        private const val PREVIOUS_TIMER_LENGTH_SECONDS_ID = "com.bordscode.timer.previous_timer_length"
+        private const val PREVIOUS_TIMER_LENGTH_SECONDS_ID = "com.example.timer.previous_timer_length"
 
         fun getPreviousTimerLengthSeconds(context: Context): Long{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
@@ -29,7 +29,7 @@ class PrefUtil {
             editor.apply()
         }
 
-        private const val TIMER_STATE_ID = "com.bordscode.timerapp.timer_state"
+        private const val TIMER_STATE_ID = "com.example.timerapp.timer_state"
 
         fun getTimerState(context: Context): TimerActivity.TimerState{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
@@ -44,7 +44,7 @@ class PrefUtil {
             editor.apply()
         }
 
-        private const val SECONDS_REMAINING_ID = "com.bordscode.timerapp.seconds_remaining"
+        private const val SECONDS_REMAINING_ID = "com.example.timerapp.seconds_remaining"
 
         fun getSecondsRemaining(context: Context): Long{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
@@ -57,7 +57,7 @@ class PrefUtil {
             editor.apply()
         }
 
-        private const val ALARM_SET_TIME_ID = "com.bordscode.timerapp.backgrounded_time"
+        private const val ALARM_SET_TIME_ID = "com.example.timerapp.backgrounded_time"
 
         fun getAlarmSetTime(context: Context): Long{
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)

@@ -14,7 +14,7 @@ import android.net.Uri
 import android.os.Build
 import android.support.v4.app.NotificationCompat
 import com.example.timerapp.*
-import kotlinx.android.synthetic.main.activity_main.view.*
+import kotlinx.android.synthetic.main.activity_timer.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 

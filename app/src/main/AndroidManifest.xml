@@ -9,17 +9,17 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+
         <receiver
                 android:name=".TimerNotificationActionReceiver"
                 android:enabled="true"
                 android:exported="false">
-                 <intent-filter>
-                    <action android:name="stop"/>
-                    <action android:name="pause"/>
-                    <action android:name="resume"/>
-                    <action android:name="start"/>
-                </intent-filter>
-
+            <intent-filter>
+                <action android:name="stop"/>
+                <action android:name="pause"/>
+                <action android:name="resume"/>
+                <action android:name="start"/>
+            </intent-filter>
         </receiver>
         <receiver
                 android:name=".TimerExpiredReceiver"
@@ -36,6 +36,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+
+        <activity android:name=".SettingsActivity"
+        android:label="Settings"
+        android:parentActivityName=".TimerActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.timerapp.TimerActivity"/>
         </activity>
     </application>
 
