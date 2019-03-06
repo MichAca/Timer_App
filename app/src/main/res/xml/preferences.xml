@@ -3,18 +3,17 @@
                                                 xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <com.pavelsikun.seekbarpreference.SeekBarPreference
+    <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
 
             android:key = "com.example.timerapp.timer_length"
             android:title = "Timer Length"
             android:summary = "For how many minutes should the timer run?"
             android:defaultValue = "10"
-            app:mbsp_minValue = "1"
-            app:mbsp_maxValue = "60"
-            app:mbsp_interval = "1"
-            app:mbsp_measurementUnit = "minutes"
-            app:mbsp_dialogEnales = "true"
-    />
+            app:msbp_minValue = "1"
+            app:msbp_maxValue = "60"
+            app:msbp_interval = "1"
+            app:msbp_measurementUnit = "minutes"
+            app:msbp_dialogEnabled = "true"/>
 
 </android.support.v7.preference.PreferenceScreen>
 
